@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import twitterLogo from './assets/twitter.svg';
+import quoteIcon from './assets/quote.png';
 import QuoteController from './controller';
 function App() {
   const { handleGetQuote, quote, author } = QuoteController();
@@ -14,7 +15,7 @@ function App() {
     <div className='w-full h-screen flex justify-center items-center  bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900'>
       <div id='quote-box' className='flex flex-col justify-between min-w-[60%] max-w-[60%] h-96 bg-white shadow-lg rounded-lg	p-10'>
         <div>
-          <p id='text' className='text-center text-2xl'>{ quote }</p>
+          <p id='text' className='text-center text-2xl'><img width={ 50 } src={ quoteIcon } alt="" />{ quote }</p>
           <div className='w-full text-right mt-5'>
             <p id='author' className='font-bold'>- { author }</p>
           </div>
