@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import twitterLogo from './assets/twitter.svg';
 import quoteIcon from './assets/quote.png';
 import QuoteController from './controller';

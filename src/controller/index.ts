@@ -2,8 +2,8 @@ import { randomQuote } from '../service/axios';
 import { useSelector, useDispatch } from 'react-redux';
 import { getQuote } from '../store/quoteSlice';
 export default function QuoteController() {
-  const quote = useSelector((state) => state.quote.quote);
-  const author = useSelector((state) => state.quote.author);
+  const quote = useSelector((state: any) => state.quote.quote);
+  const author = useSelector((state: any) => state.quote.author);
   const dispatch = useDispatch();
 
   const handleGetQuote = async () => {
